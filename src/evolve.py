@@ -12,7 +12,7 @@ import platform
 from typing import Tuple, Optional
 import torch
 from IPython.display import clear_output
-from config import device, report_evolutions, save_evolutions
+from config import *
 from util import clear_cache
 from generate import evolve_population
 from reward import compute_reward_vector
@@ -20,7 +20,7 @@ from reward import compute_reward_vector
 # Define type for population tuple
 Population = Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]
 
-def evolve(population: Population, device: str = device, max_evolutions: int = 100000, save_dir: str = "saved_populations") -> Population:
+def evolve(population: Population, device: str = device, max_evolutions: int = max_evolutions, save_dir: str = "saved_populations") -> Population:
     """
     Evolve a population of antenna configurations to maximize the reward function.
 

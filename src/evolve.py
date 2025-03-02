@@ -58,7 +58,7 @@ def evolve(population: Population, device: str = device, max_evolutions: int = m
             print(f"  Best Reward: {current_best_reward.item():.2f}")
             print(f"  Overall Best Reward: {best_reward.item():.2f}")
             print(f"  Average Reward: {avg_reward:.2f}")
-            print(f"  Time per Evolution: {time_per_evolution:.2f} seconds")
+            print(f"  Time per Evolution: {time_per_evolution:.2f} minutes")
 
         if (evolution + 1) % save_evolutions == 0:
             clear_output(wait=True)

@@ -66,4 +66,4 @@ This project is open-source and available under the MIT License.
 
 ## Acknowledgements
 
-This project was developed as part of an effort to optimize satellite antenna configurations using genetic algorithms and advanced signal processing techniques.
+This project was developed as part of an effort to optimize satellite antenna configurations using genetic algorithms and advanced signal processing techniques for ECE 8803 Advanced Satellite Communications Hardware with Prof. Gregory Durgin

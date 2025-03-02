@@ -67,6 +67,7 @@ def evolve(population: Population, device: str = device, max_evolutions: int = 1
             save_path: str = os.path.join(save_dir, f"population_{timestamp}_{host}.json")
             try:
                 save_population(population, reward_vector, save_path)
+                plot_best_configuration(population, reward_vector)
                 print(f"Population saved to {save_path}")
                 print(f"Overall Best Reward: {current_best_reward.item():.2f}")
             except Exception as e:
